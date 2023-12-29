@@ -1,0 +1,57 @@
+<style>
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    .logo{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .email{
+        padding-top: 50px;
+    }
+    body{
+        width: 0%;
+        height: 100%;
+    }
+</style>
+
+    
+
+<h1>Contcat Me.</h1>
+<div class="logo">
+    <a href="https://www.instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" alt=""></a>
+    <a href="https://www.x.com"><img src="https://img.freepik.com/premium-vector/new-twitter-logo-x-2023-twitter-x-logo-vector-download_691560-10809.jpg" alt=""></a>
+    <a href="https://www.linkedin.com"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt=""></a>
+</div>
+<h1>Contact Form</h1>
+<form id="contact_form" name="contact_form" method="post">
+    <div class="mb-5 row">
+        <div class="col">
+            <label>First Name</label>
+            <input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name">
+        </div>
+        <div class="col">
+            <label>Last Name</label>
+            <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name">
+        </div>
+    </div>
+    <div class="mb-5 row">
+        <div class="col">
+            <label for="email_addr">Email address</label>
+            <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                placeholder="name@example.com">
+        </div>
+        <div class="col">
+            <label for="phone_input">Phone</label>
+            <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
+                placeholder="Phone">
+        </div>
+    </div>
+    <div class="mb-5">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary px-4 btn-lg">Post</button>
+</form> 
